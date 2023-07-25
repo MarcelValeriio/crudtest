@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    [type='text'],
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+
+    textarea,
+
+    select {
+        @apply w-full border border-gray-300 rounded-lg shadow-sm;
+    }
+
+}
+
+.btn-custom {
+    @apply inline-block px-2 rounded-lg text-white transition duration-700 ease-in-out transform hover:scale-105
+}
+
+.btn-primary {
+    @apply bg-red-500 hover:bg-red-800
+}
+
+.btn-secondary {
+    @apply bg-yellow-500 hover:bg-yellow-600
+}
+
+
+.btn-third {
+    @apply bg-blue-400 hover:to-blue-700
+}
+
+th {
+    @apply border border-black
+}
+
+td {
+    @apply border border-slate-400
+}
