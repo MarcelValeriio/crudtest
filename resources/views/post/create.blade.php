@@ -25,34 +25,38 @@
                 
             <div class="sm:col-span-4 justify-center">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="">Title:</label>
-            <input class="" type="text" name="title" id="">
+            <input  type="text" name="title" id="">
     
             @error('title')
                 <p style="color: red;">{{ $message }}</p>
             @enderror
             </div>
         </div>
+            <div class="mt-4 h-20">
+            <label class="block text-gray-700 text-sm font-bold mb-2 " for="">Description:</label>
             <div>
-            <label for="">Description:</label>
-            <input class="" type="text" name="description">
+                <textarea class="resize-none" name="description" id="" cols="1" rows="3"></textarea>
+            </div>
     
             @error('description')
                 <p style="color: red;">{{ $message }}</p>
             @enderror
             </div>
-            <div>
-            <label for="">Category:</label>
-            <input class="" type="text" name="category">
+            <div class="mt-20">
+            <label class="" for="">Category:</label>
+            <input class="mt-2" type="text" name="category">
             @error('category')
             <p style="color: red;">{{ $message }}</p>
             @enderror
             </div>
-            <div>
-            <label for="">Tag:</label>
-            <input class="" type="text" name="tag">
+            <div class="mt-2">
+            <label for="w-full">Tag:</label>
+            <div class=" grid grid-cols-2 justify-left">
+            <input class="mt-2" type="text" name="tag" >
             @error('tag')
             <p style="color: red;">{{ $message }}</p>
             @enderror
+        </div>
             </div>
             <div class="btn-custom btn-third m-3">
                 <input type="submit" value="Create"> 
